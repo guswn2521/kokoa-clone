@@ -1,0 +1,10 @@
+:root {
+  --main-color: rgb(39, 147, 151);
+  --border: 1px solid var(--main-color);
+  --main-padding: 10px;
+}
+p {
+  color: var(--main-color);
+  border: var(--border);
+  padding: var(--main-padding);
+}

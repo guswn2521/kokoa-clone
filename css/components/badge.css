@@ -1,0 +1,21 @@
+.badge {
+  background-color: rgb(255, 50, 14);
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+.badge_dot_box {
+  position: relative;
+}
+.badge_dot {
+  background-color: rgb(255, 50, 14);
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+}
