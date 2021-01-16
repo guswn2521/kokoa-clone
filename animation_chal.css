@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(110, 194, 197);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80px;
+  height: 300px;
+}
+.up,
+.down {
+  display: flex;
+  justify-content: space-between;
+}
+.up {
+  animation: circling 2s ease-in-out infinite;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+.square {
+  width: 10px;
+  height: 50px;
+  background-color: white;
+  animation: piano 1s ease-in-out infinite;
+}
+.square:nth-child(1) {
+  animation-delay: 0s;
+}
+.square:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.square:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.square:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.square:nth-child(5) {
+  animation-delay: 0.4s;
+}
+@keyframes piano {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  75% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes circling {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
